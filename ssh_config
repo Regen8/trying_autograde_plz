@@ -1,0 +1,3 @@
+Host github.tamu.edu
+  IdentityFile ~/.ssh/deploy_key
+  IdentitiesOnly yes

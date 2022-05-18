@@ -1,0 +1,30 @@
+{
+    "execution_time": 0.11727046966552734,
+    "output": "",
+    "score": 9.0,
+    "stdout_visibility": "visible",
+    "tests": [
+        {
+            "max_score": 4.0,
+            "name": "Compiles: -Wall -Wextra -pedantic -Weffc++ -Wno-unused-parameter",
+            "number": "02",
+            "output": "",
+            "score": 0
+        },
+        {
+            "max_score": 7.0,
+            "name": "ret4 (happy paths)",
+            "number": "03",
+            "output": "[PASS] all tests passing in main",
+            "score": 7.0
+        },
+        {
+            "max_score": 2,
+            "name": "Approved includes for functions.cpp",
+            "number": "00",
+            "output": "bash: line 1: ./approved_includes.sh: Permission denied",
+            "score": 2
+        }
+    ],
+    "visibility": "visible"
+}

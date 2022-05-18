@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+BASE_DIR=$(pwd)
+
+rm -rf testbox
+mkdir testbox
+TESTBOX=testbox
+
+# copy header files to testbox
+cp tests/cs12x_test.h $TESTBOX/cs12x_test.h
+
+# copy student code to testbox
+cp solution/main.cpp $TESTBOX/
+cp solution/functions.cpp $TESTBOX/
+#cp solution/string_calculator.h $TESTBOX/
+
+# copy test runner to testbox
+cp run_tests.py $TESTBOX/
+# cp rename_class_and_methods.py $TESTBOX/
+cp tests/approved_includes.sh $TESTBOX/
+cp tests/approved_includes_functions.cpp $TESTBOX/
+cp tests/approved_includes_main.cpp $TESTBOX/
+cp tests/functions_tests.cpp $TESTBOX/
+cp -r tests/io_tests/ $TESTBOX/
+cp -r tests/script_tests/ $TESTBOX/
+
+cd $TESTBOX
+
+# run tests <tests file> [results file]
+python3 run_tests.py functions_tests.cpp main.cpp $BASE_DIR/results.json
