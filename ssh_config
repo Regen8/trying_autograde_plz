@@ -1,5 +1,3 @@
 Host github.com
-  IdentityFile /root/.ssh/deploy_key
-  AddKeysToAgent yes 
-  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/deploy_key
   IdentitiesOnly yes
