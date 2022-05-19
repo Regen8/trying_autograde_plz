@@ -43,14 +43,14 @@ cp $REPO/run_autograder /autograder/
 cp $TESTS/cs12x_test.h $TESTBOX/
 
 # copy student code to testbox
-#cp $SUBMISSION/main.cpp $TESTBOX/
-cp $SUBMISSION/functions.cpp $TESTBOX/
 cp $SUBMISSION/main.cpp $TESTBOX/
+cp $SUBMISSION/functions.cpp $TESTBOX/
+#cp $SUBMISSION/main.cpp $TESTBOX/
 
 # copy test runner to testbox
 cp $REPO/run_tests.py $TESTBOX/
 # cp $REPO/rename_class_and_methods.py $TESTBOX/
-#cp $TESTS/approved_includes.sh $TESTBOX/
+cp $TESTS/approved_includes.sh $TESTBOX/
 cp tests/approved_includes_main.cpp $TESTBOX/
 cp tests/approved_includes_functions.cpp $TESTBOX/
 cp tests/functions_tests.cpp $TESTBOX/
