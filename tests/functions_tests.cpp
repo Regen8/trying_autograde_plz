@@ -4,7 +4,7 @@
 @points: 4
 @show_output: True
 @type: script
-@target: functions.cpp
+@target: main.cpp
 */
 {
     script

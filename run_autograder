@@ -25,13 +25,6 @@ if [ ! -f $SUBMISSION/main.cpp ]; then
  	exit 1
 fi
 
-# if [ ! -f $SUBMISSION/main.cpp ]; then
-# 	{
-# 		echo "{\"score\": 0, \"output\": \"main.cpp does not exist.\"}"
-# 	} > /autograder/results/results.json
-# 	exit 1
-# fi
-
 # Update autograder files
 cd $REPO
 git pull
