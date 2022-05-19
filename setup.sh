@@ -10,5 +10,6 @@ chmod 600 /root/.ssh/deploy_key
 # To prevent host key verification errors at runtime
 ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 
+ssh -vT git@github.tamu.edu
 # Clone autograder files
 git clone git@github.com:Regen8/trying_autograde_plz.git /autograder/autograder-code
