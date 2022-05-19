@@ -20,7 +20,7 @@ fi
 
 if [ ! -f $SUBMISSION/main.cpp ]; then
  	{
- 		echo "{\"score\": 0, \"output\": \"grade_calculator.h does not exist.\"}"
+ 		echo "{\"score\": 0, \"output\": \"main.cpp does not exist.\"}"
  	} > /autograder/results/results.json
  	exit 1
 fi
@@ -61,4 +61,4 @@ cd $TESTBOX
 
 # run tests <tests file> [results file]
 chmod u+x approved_includes.sh
-python3 run_tests.py functions_tests.cpp main.cpp /autograder/results/results.json
+python3 run_tests.py functions_tests.cpp /autograder/results/results.json
