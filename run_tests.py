@@ -241,7 +241,7 @@ def compile_unit_test() -> bool:
 def compile_io_test() -> bool:
     CXX = 'g++'
     FLAGS = '-std=c++17 -g -o io_test'
-    SRC = 'main.cpp functions.cpp'
+    SRC = 'functions.cpp main.cpp'
     compile_cmd = '{} {} {} 2>&1'.format(CXX, FLAGS, SRC)
     p = popen(compile_cmd)
     try:

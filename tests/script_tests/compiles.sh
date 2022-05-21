@@ -13,7 +13,7 @@ fail () {
 echo 0.0 > OUTPUT
 
 SOURCE=("functions.cpp" "main.cpp")
-#HEADERS=("string_calculator.h")
+HEADERS=()
 FILES=("${SOURCE[@]}" "${HEADERS[@]}")
 
 for file in "${FILES[@]}"; do
