@@ -12,7 +12,7 @@ fail () {
 
 echo 0.0 > OUTPUT
 
-SOURCE=("functions.cpp main.cpp")
+SOURCE=("functions.cpp" "main.cpp")
 #HEADERS=("string_calculator.h")
 FILES=("${SOURCE[@]}" "${HEADERS[@]}")
 
