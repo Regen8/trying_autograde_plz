@@ -1,10 +1,8 @@
 #include <iostream>
 #include <string>
-#include "./function.h" 
+#include "./function.h"
 
 using std::cout, std::endl;
 using std::string;
 
-int ret_4(){
-    return 4;
-}
+int ret_4(){ return 4; }

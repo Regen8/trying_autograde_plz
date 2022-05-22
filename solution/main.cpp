@@ -7,6 +7,6 @@ using std::cout, std::endl, std::cin;
 using std::string;
 
 int main() {
-    cout << ret4();
+    cout << ret_4();
 }
 
