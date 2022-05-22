@@ -1,7 +1,7 @@
 {
-    "execution_time": 0.11727046966552734,
+    "execution_time": 0.856687068939209,
     "output": "",
-    "score": 9.0,
+    "score": 62.0,
     "stdout_visibility": "visible",
     "tests": [
         {
@@ -13,14 +13,140 @@
         },
         {
             "max_score": 7.0,
-            "name": "ret4 (happy paths)",
+            "name": "digit_to_decimal (happy paths)",
             "number": "03",
             "output": "[PASS] all tests passing in main",
             "score": 7.0
         },
         {
+            "max_score": 3.0,
+            "name": "digit_to_decimal (unhappy paths)",
+            "number": "04",
+            "output": "[PASS] all tests passing in main",
+            "score": 3.0
+        },
+        {
+            "max_score": 7.0,
+            "name": "decimal_to_digit (happy paths)",
+            "number": "05",
+            "output": "[PASS] all tests passing in main",
+            "score": 7.0
+        },
+        {
+            "max_score": 3.0,
+            "name": "decimal_to_digit (unhappy paths)",
+            "number": "06",
+            "output": "[PASS] all tests passing in main",
+            "score": 3.0
+        },
+        {
+            "max_score": 3.0,
+            "name": "trim_leading_zeros (small, positive)",
+            "number": "07",
+            "output": "[PASS] all tests passing in main",
+            "score": 3.0
+        },
+        {
+            "max_score": 3.0,
+            "name": "trim_leading_zeros (big, positive)",
+            "number": "08",
+            "output": "[PASS] all tests passing in main",
+            "score": 3.0
+        },
+        {
+            "max_score": 2.0,
+            "name": "trim_leading_zeros (small, negative)",
+            "number": "09",
+            "output": "[PASS] all tests passing in main",
+            "score": 2.0
+        },
+        {
+            "max_score": 2.0,
+            "name": "trim_leading_zeros (big, negative)",
+            "number": "10",
+            "output": "[PASS] all tests passing in main",
+            "score": 2.0
+        },
+        {
+            "max_score": 4.0,
+            "name": "add (small, positives)",
+            "number": "11",
+            "output": "[PASS] all tests passing in main",
+            "score": 4.0
+        },
+        {
+            "max_score": 6.0,
+            "name": "add (big, positives)",
+            "number": "12",
+            "output": "[PASS] all tests passing in main",
+            "score": 6.0
+        },
+        {
+            "max_score": 1.0,
+            "name": "add (small, negatives)",
+            "number": "13",
+            "output": "[PASS] all tests passing in main",
+            "score": 1.0
+        },
+        {
+            "max_score": 1.0,
+            "name": "add (big, negatives)",
+            "number": "14",
+            "output": "[PASS] all tests passing in main",
+            "score": 1.0
+        },
+        {
+            "max_score": 1.0,
+            "name": "add (trim_leading)",
+            "number": "15",
+            "output": "[PASS] all tests passing in main",
+            "score": 1.0
+        },
+        {
+            "max_score": 5.0,
+            "name": "add (hidden tests)",
+            "number": "16",
+            "output": "[PASS] all tests passing in main",
+            "score": 5.0
+        },
+        {
+            "max_score": 4.0,
+            "name": "multiply (small, positives)",
+            "number": "17",
+            "output": "[PASS] all tests passing in main",
+            "score": 4.0
+        },
+        {
+            "max_score": 1.0,
+            "name": "multiply (small, negatives)",
+            "number": "19",
+            "output": "[PASS] all tests passing in main",
+            "score": 1.0
+        },
+        {
+            "max_score": 1.0,
+            "name": "multiply (small, opposite signs)",
+            "number": "21",
+            "output": "[PASS] all tests passing in main",
+            "score": 1.0
+        },
+        {
+            "max_score": 4.0,
+            "name": "user interface (add, positives)",
+            "number": "22",
+            "output": "Your output: 4\n\n\nExpected output: 4",
+            "score": 4.0
+        },
+        {
             "max_score": 2,
-            "name": "Approved includes for functions.cpp",
+            "name": "Approved includes for main.cpp",
+            "number": "00",
+            "output": "bash: line 1: ./approved_includes.sh: Permission denied",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "Approved includes for string_calculator.cpp",
             "number": "00",
             "output": "bash: line 1: ./approved_includes.sh: Permission denied",
             "score": 2
