@@ -45,6 +45,7 @@ cp $TESTS/cs12x_test.h $TESTBOX/
 # copy student code to testbox
 # cp $SUBMISSION/main.cpp $TESTBOX/
 cp $SUBMISSION/stress_ball.cpp $TESTBOX/
+cp $REPO/main.cpp $TESTBOX/
 # cp $SUBMISSION/stress_ball.h $TESTBOX/
 
 # copy test runner to testbox
