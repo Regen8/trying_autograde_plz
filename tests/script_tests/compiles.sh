@@ -12,7 +12,7 @@ fail () {
 
 echo 0.0 > OUTPUT
 
-SOURCE=("stress_ball.cpp" "main.cpp")
+SOURCE=("stress_ball.cpp")
 HEADERS=()
 FILES=("${SOURCE[@]}" "${HEADERS[@]}")
 
@@ -26,7 +26,7 @@ for file in "${FILES[@]}"; do
 done
 
 printf "compiles without errors? "
-g++ -std=c++17 -Wall -Wextra -pedantic -Weffc++ -Wno-unused-parameter "${SOURCE[@]}" 1>OUT 2>ERR
+g++ -std=c++17 -Wall -Wextra -pedantic -Weffc++ -Wno-unused-parameter main.cpp "${SOURCE[@]}" 1>OUT 2>ERR
 ret=$?
 if [ $ret -eq 0 ]; then
   printf "OK\n"
