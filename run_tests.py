@@ -442,7 +442,7 @@ def main(filename) -> None:
         for line in f:
             list_of_approved_includes.append(line.strip())
         forbidden_found, output = check_approved_includes(target, list_of_approved_includes)
-        test_result = {'score': 2, 'number':'00', 'max_score': 2, 'name': 'Approved includes for {}'.format(target), 'output': output.strip()}
+        test_result = {'score': 0, 'number':'0', 'max_score': 2, 'name': 'Approved includes for {}'.format(target), 'output': output.strip()}
         if (forbidden_found):
             test_result['score'] = 0
             print(test_result['score'])
