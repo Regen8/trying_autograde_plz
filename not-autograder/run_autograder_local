@@ -9,21 +9,22 @@ TESTBOX=testbox
 cp tests/cs12x_test.h $TESTBOX/cs12x_test.h
 
 # copy student code to testbox
-cp solution/main.cpp $TESTBOX/
-cp solution/function.cpp $TESTBOX/
-cp solution/function.h $TESTBOX/
+# cp solution/main.cpp $TESTBOX/
+cp solution/stress_ball.cpp $TESTBOX/
+cp main.cpp $TESTBOX/
+# cp solution/stress_ball.h $TESTBOX/
 
 # copy test runner to testbox
 cp run_tests.py $TESTBOX/
 # cp rename_class_and_methods.py $TESTBOX/
 cp tests/approved_includes.sh $TESTBOX/
-cp tests/approved_includes_function.cpp $TESTBOX/
-cp tests/approved_includes_main.cpp $TESTBOX/
-cp tests/function_tests.cpp $TESTBOX/
+cp tests/approved_includes_stress_ball.cpp $TESTBOX/
+# cp tests/approved_includes_main.cpp $TESTBOX/
+cp tests/stress_ball_tests.cpp $TESTBOX/
 cp -r tests/io_tests/ $TESTBOX/
 cp -r tests/script_tests/ $TESTBOX/
 
 cd $TESTBOX
 
 # run tests <tests file> [results file]
-python3 run_tests.py function_tests.cpp $BASE_DIR/results.json
+python3 run_tests.py stress_ball_tests.cpp $BASE_DIR/results.json

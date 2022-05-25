@@ -12,8 +12,8 @@ fail () {
 
 echo 0.0 > OUTPUT
 
-SOURCE=("function.cpp" "main.cpp")
-HEADERS=("function.h")
+SOURCE=("stress_ball.cpp" "main.cpp")
+HEADERS=()
 FILES=("${SOURCE[@]}" "${HEADERS[@]}")
 
 for file in "${FILES[@]}"; do

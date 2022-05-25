@@ -204,6 +204,7 @@ def write_unit_test(test: Dict[str,str]) -> None:
         f.write('#include "{}"\n\n'.format(test['target']))
         f.write('#include<string>\n')
         f.write('#include<sstream>\n')
+        f.write('#include<cstring>\n')
 
         f.write('int main() {\n')
         f.write('    INIT_TEST;\n')
@@ -241,7 +242,7 @@ def compile_unit_test() -> bool:
 def compile_io_test() -> bool:
     CXX = 'g++'
     FLAGS = '-std=c++17 -g -o io_test'
-    SRC = 'main.cpp function.cpp'
+    SRC = 'stress_ball.cpp main.cpp'
     compile_cmd = '{} {} {} 2>&1'.format(CXX, FLAGS, SRC)
     p = popen(compile_cmd)
     try:
