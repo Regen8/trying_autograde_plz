@@ -242,7 +242,7 @@ def compile_unit_test() -> bool:
 def compile_io_test() -> bool:
     CXX = 'g++'
     FLAGS = '-std=c++17 -g -o io_test'
-    SRC = 'stress_ball.cpp main.cpp'
+    SRC = 'Stress_ball.cpp main.cpp'
     compile_cmd = '{} {} {} 2>&1'.format(CXX, FLAGS, SRC)
     p = popen(compile_cmd)
     try:

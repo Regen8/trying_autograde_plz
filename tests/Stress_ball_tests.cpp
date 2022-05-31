@@ -4,7 +4,7 @@
 @points: 1
 @show_output: True
 @type: script
-@target: stress_ball.cpp
+@target: Stress_ball.cpp
 */
 {
     script
@@ -17,7 +17,7 @@
 @points: 5
 @show_output: True
 @type: unit
-@target: stress_ball.cpp
+@target: Stress_ball.cpp
 */
 {
     Stress_ball sb;
@@ -52,7 +52,7 @@
 @points: 4
 @show_output: True
 @type: unit
-@target: stress_ball.cpp
+@target: Stress_ball.cpp
 */
 {
     Stress_ball sb(Stress_ball_colors::red, Stress_ball_sizes::small);
@@ -87,7 +87,7 @@
 @points: 2
 @show_output: True
 @type: unit
-@target: stress_ball.cpp
+@target: Stress_ball.cpp
 */
 {
     Stress_ball sb(Stress_ball_colors::red, Stress_ball_sizes::small);
@@ -134,7 +134,7 @@
 @points: 2
 @show_output: True
 @type: unit
-@target: stress_ball.cpp
+@target: Stress_ball.cpp
 */
 {
     Stress_ball sb(Stress_ball_colors::red, Stress_ball_sizes::small);
@@ -181,7 +181,7 @@
 @points: 5
 @show_output: True
 @type: unit
-@target: stress_ball.cpp
+@target: Stress_ball.cpp
 */
 {
     Stress_ball sb(Stress_ball_colors::red, Stress_ball_sizes::small);
@@ -226,7 +226,7 @@
 @points: 5
 @show_output: True
 @type: unit
-@target: stress_ball.cpp
+@target: Stress_ball.cpp
 */
 {
     using namespace std;
@@ -287,7 +287,7 @@
 @points: 1
 @show_output: True
 @type: script
-@target: stress_ball.cpp
+@target: Stress_ball.cpp
 */
 {
     script

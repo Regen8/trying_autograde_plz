@@ -1,4 +1,4 @@
-#include "stress_ball.h"
+#include "Stress_ball.h"
 
 // default constructor 
 Stress_ball::Stress_ball() : color(Stress_ball_colors::red), size(Stress_ball_sizes::small) {

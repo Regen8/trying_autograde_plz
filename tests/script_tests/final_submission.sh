@@ -12,7 +12,7 @@ fail () {
 
 echo 0.0 > OUTPUT
 
-SOURCE=("stress_ball.cpp")
+SOURCE=("Stress_ball.cpp")
 HEADERS=()
 FILES=("${SOURCE[@]}" "${HEADERS[@]}")
 

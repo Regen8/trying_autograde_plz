@@ -3,8 +3,8 @@ string
 cstring
 stdexcept
 limits
-stress_ball
-stress_ball.h
-./stress_ball.h
+Stress_ball
+Stress_ball.h
+./Stress_ball.h
 tuple
 sstream
