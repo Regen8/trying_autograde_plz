@@ -1,21 +1,7 @@
-#include <iostream>
-#include <string>
+#include "stress_ball.h"
 
-using namespace std;
-	
-	//part a
-	enum class Stress_ball_colors {red, blue, yellow, green};
-	enum class Stress_ball_sizes {small, medium, large};
-	
-	class Stress_ball{
-		private: //part a
-			Stress_ball_colors color;
-			Stress_ball_sizes size;
-		
-		public: 
-		
-		//part a
-		Stress_ball() : color(Stress_ball_colors::red), size(Stress_ball_sizes::small) {
+// default constructor 
+Stress_ball::Stress_ball() : color(Stress_ball_colors::red), size(Stress_ball_sizes::small) {
 			int rngColor = rand()%4;
 			int rngSize = rand()%3;
 			
@@ -36,33 +22,29 @@ using namespace std;
 			} else {
 				size = Stress_ball_sizes::large;
 			}
-		}
-		
-		//part b
-		Stress_ball(Stress_ball_colors c, Stress_ball_sizes s) : color(c), size(s){}
-		
-		//part c
-		Stress_ball_colors get_color() const{
-			return color;
-		}
-		
-		//part d
-		Stress_ball_sizes get_size() const{
-			return size;
-		}
-		
-		//part e
-		bool operator==(const Stress_ball& sb2){
-			bool same = true;
-			if(this->color != sb2.color){ same = false; }
-			if(this->size != sb2.size) {same = false;}
-			return same;
-		}
-	};
+}
 
-//part f
-ostream& operator<<(ostream& o, const Stress_ball& sb) {
-		string colorStr;
+// constructor
+Stress_ball::Stress_ball(Stress_ball_colors c, Stress_ball_sizes s) : color(c), size(s)
+{ }
+
+Stress_ball_colors Stress_ball::get_color() const{
+	return color;
+}
+
+Stress_ball_sizes Stress_ball::get_size() const{
+	return size;
+}
+
+bool Stress_ball::operator==(const Stress_ball& sb){
+			bool same = true;
+			if(this->color != sb.color){ same = false; }
+			if(this->size != sb.size) {same = false;}
+			return same;
+}
+
+ostream& operator<<(ostream& os, const Stress_ball& sb){
+string colorStr;
 		string sizeStr;
 		
 		int colNum = static_cast<int>(sb.get_color());
@@ -100,6 +82,6 @@ ostream& operator<<(ostream& o, const Stress_ball& sb) {
 				sizeStr = "undefined";
 				break;
 		}
-		o << "(" << colorStr << "," << sizeStr << ")" << endl;
-		return o;
-	}
+		os << "(" << colorStr << "," << sizeStr << ")" << endl;
+		return os;
+}

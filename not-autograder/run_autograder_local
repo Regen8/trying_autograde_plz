@@ -12,6 +12,7 @@ cp tests/cs12x_test.h $TESTBOX/cs12x_test.h
 # cp solution/main.cpp $TESTBOX/
 cp solution/stress_ball.cpp $TESTBOX/
 cp main.cpp $TESTBOX/
+cp stress_ball.h $TESTBOX/
 # cp solution/stress_ball.h $TESTBOX/
 
 # copy test runner to testbox
