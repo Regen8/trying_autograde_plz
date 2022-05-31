@@ -11,9 +11,9 @@ SUBMISSION=/autograder/submission
 
 # sanity check before doing any real effort
 # TODO: move this check into run_tests.py?
-if [ ! -f $SUBMISSION/stress_ball.cpp ]; then
+if [ ! -f $SUBMISSION/Stress_ball.cpp ]; then
 	{
-		echo "{\"score\": 0, \"output\": \"stress_ball.cpp does not exist.\"}"
+		echo "{\"score\": 0, \"output\": \"Stress_ball.cpp does not exist.\"}"
 	} > /autograder/results/results.json
 	exit 1
 fi
@@ -44,9 +44,9 @@ cp $TESTS/cs12x_test.h $TESTBOX/
 
 # copy student code to testbox
 # cp $SUBMISSION/main.cpp $TESTBOX/
-cp $SUBMISSION/stress_ball.cpp $TESTBOX/
+cp $SUBMISSION/Stress_ball.cpp $TESTBOX/
 cp $REPO/main.cpp $TESTBOX/
-cp $REPO/stress_ball.h $TESTBOX
+cp $REPO/Stress_ball.h $TESTBOX
 # cp $SUBMISSION/stress_ball.h $TESTBOX/
 
 # copy test runner to testbox
@@ -54,8 +54,8 @@ cp $REPO/run_tests.py $TESTBOX/
 # cp $REPO/rename_class_and_methods.py $TESTBOX/
 cp $TESTS/approved_includes.sh $TESTBOX/
 # cp tests/approved_includes_main.cpp $TESTBOX/
-cp tests/approved_includes_stress_ball.cpp $TESTBOX/
-cp tests/stress_ball_tests.cpp $TESTBOX/
+cp tests/approved_includes_Stress_ball.cpp $TESTBOX/
+cp tests/Stress_ball_tests.cpp $TESTBOX/
 cp -r tests/io_tests/ $TESTBOX/
 cp -r tests/script_tests/ $TESTBOX/
 
@@ -63,4 +63,4 @@ cd $TESTBOX
 
 # run tests <tests file> [results file]
 chmod u+x approved_includes.sh
-python3 run_tests.py stress_ball_tests.cpp /autograder/results/results.json
+python3 run_tests.py Stress_ball_tests.cpp /autograder/results/results.json
